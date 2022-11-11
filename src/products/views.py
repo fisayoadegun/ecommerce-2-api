@@ -107,9 +107,9 @@ class ProductRetrieveAPIView(generics.RetrieveAPIView):
 	serializer_class = ProductDetailSerializer
 
 
-# class ProductCreateAPIView(generics.CreateAPIView):
-# 	queryset = Product.objects.all()
-# 	serializer_class = ProductDetailUpdateSerializer
+class ProductCreateAPIView(generics.CreateAPIView):
+	queryset = Product.objects.all()
+	serializer_class = ProductDetailUpdateSerializer
 
 
 
